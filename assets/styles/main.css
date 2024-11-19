@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+}
+.header_logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.header_cart {
+  background-color: #6f23ff;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  min-width: 115px;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.promo {
+  max-width: 50%;
+  flex: 1;
+}
+.promo_title {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 300px;
+}
+.promo_description {
+  padding: 10px 20px;
+  font-size: 1em;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  text-align: left;
+  width: 300px;
+}
+.promo-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6f23ff;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+}
+.promo-button img {
+  margin-left: 10px;
+}
+.illustration {
+  max-width: 50%;
+  flex: 1;
+}
+.illustration_image {
+  max-width: 100%;
+  height: auto;
+}
+.footer {
+  margin-top: auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+.footer_nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  margin-left: 20px;
+}
+.footer_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+.footer_link {
+  text-decoration: none;
+  color: #6f6eff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .promo,
+  .illustration {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .promo_title,
+  .promo_description {
+    width: 100%;
+  }
+}
